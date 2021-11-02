@@ -10,7 +10,6 @@ from flirtTalk import flirt
 from roastScript import roast
 from roastScript2 import roast1
 from flirtTalk2 import flirt1
-from fratBoy import frat
 
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
@@ -101,7 +100,5 @@ while True:
             i += 1
             q += 1
             print(q)
-    if(keyboard.is_pressed('k')):
-       frat()
 image.release()
 cv2.destroyAllWindows()
