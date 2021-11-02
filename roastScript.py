@@ -1,8 +1,5 @@
-
 import requests
-
 import pyttsx3
-
 from better_profanity import profanity
 
 engine = pyttsx3.init()
@@ -21,7 +18,7 @@ def roast():
     response = requests.post("http://api.vicgalle.net:5000/generate", params=payload).json()
     eb =response["text"]
     if __name__=='__main__':
-        eb=profanity.censor(response["text"])
+        eb=profanity.censor(eb)
         if("****" in eb):
             eb= "saying this instead of what he wanted to say so nobody gets cancelled"
     print(eb)
